@@ -4,6 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo "hello world"
+                
+                pullRequest.addLabel('Build Passing')
             }
         }
     }
